@@ -1,0 +1,175 @@
+body{
+    //border: solid;
+    //border-color: darkblue;
+    font-family: Calibri;
+   // background-image:url("C/University's courses/year2/Company website/Images/cloud.jpg");
+}
+#logoDiv{
+    //border-style: dotted;
+    //border-color: chocolate;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 10px 20px 10px 150px;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+header{
+    //border: solid;
+   // border-color: brown;
+    display: flex;
+    //justify-content: center;
+    height: 100px;
+    background-color: lightsteelblue;
+    color: black;
+    //background-image:url("C/University's courses/year2/Company website/Images/cloud.jpg");
+}
+#nameDiv{
+    //border: solid;
+   //border-color: blue;
+    //overflow: auto;
+    //display: flex;
+   // justify-content: center;
+    width: 50%;
+    font-size: x-large;
+    padding: 9px 0px 0px 0px;
+}
+nav{
+    //border-style: dashed;
+    overflow: auto;
+    margin: 50px 0px 0px 0px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    border: solid;
+    float: left;
+    //background-color: chocolate;
+    margin: 5px 10px 5px 10px;
+    padding: 8px;
+
+}
+#section1{
+    height: 460px;
+    //border: solid;
+    //border-color: coral;
+    margin: 2px 0px 2px 0px;
+    display: flex;
+    justify-content: center;
+}
+section{
+    height: 550px;
+    //border: solid;
+    border-color: coral;
+    margin: 2px 0px 2px 0px;
+    display: flex;
+    justify-content: center;
+}
+#imageSlide{
+    //border: solid;
+    width: 80%;
+    margin: 2px 0px 2px 0px;
+}
+#map{
+    height: 300px;
+}
+.mapDiv{
+    //border: solid;
+    width: 40%;
+    height: 80%;
+}
+.bodyDiv{
+    //border: solid;
+    width: 40%;
+    margin: 2% 0% 2% 0%;
+}
+article{
+   // border: solid;
+    width: 40%;
+
+}
+#reverseSec{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.p{
+    //border: solid;
+    font-size: xxx-large;
+    font-weight: bold;
+    padding:80px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+   // border-style: double;
+    //border-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 1px;
+    background-color: lightsteelblue;
+   // color: white;
+
+    
+
+}
+.footerDiv{
+    border: solid;
+    margin: 10px 20px 10px 20px;
+    padding: 6px;
+}
+#search{
+    //border: solid;
+    //width: 20%;
+}
+.facebookLogo{
+    //border: solid;
+    height: 50px;
+    width: 50px;
+    margin: 1px 100px 0px 100px;
+}
+#copy{
+    margin: 20px 300px 0px 0px;
+    //color: white;
+}
+a{
+    
+    text-decoration: none;
+}
+/*
+Start of Services webpage */
+#imgService{
+    border: solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 15px 15px;
+    padding: 30px;
+}
+button{
+    width: 20%;
+}
+#sectionServices{
+    //border: solid;
+    border-color: blue;
+    height: 700px;
+}
+.serviceDiv{
+    //border: solid;
+    border-color: brown;
+    width: 100%;
+    margin: 3px;
+    padding:20px;
+}
+.innerDiv{
+    //border: solid;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    padding:1px;
+}
