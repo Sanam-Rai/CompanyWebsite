@@ -216,3 +216,10 @@ button{
     //width: 90%;
     color: white;
 }
+
+/* start of CONTACT webpage */
+#contactSec{
+    border: solid;
+    border-color: teal;
+    height: 670px;
+}
