@@ -59,9 +59,9 @@ ul{
     height: 460px;
     //border: solid;
     //border-color: coral;
-    margin: 100px 0px 2px 0px;
-    display: flex;
-    justify-content: center;
+}
+section#section1{
+    margin-top: 100px;
 }
 section{
     height: 550px;
@@ -226,8 +226,13 @@ button{
     height: 680px;
 }
 
-/* Adding functionality */
-/*Sticky header */
-.sticky + .content{
+/* Functionlaity for sticky header*/
+section#contactSec{
+    margin-top: 100px;
+}
+section#imgService{
+    margin-top: 100px;
+}
+section#aboutSectionImg{
     margin-top: 100px;
 }
