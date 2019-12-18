@@ -11,6 +11,7 @@ body{
     height: 80px;
     float: left;
     margin: 10px 20px 10px 150px;
+    transition: height 100ms ease;
 
 }
 img{
@@ -28,6 +29,7 @@ header{
     position: fixed;
     top : 0px;
     width: 100%;  
+    transition: height 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 #nameDiv{
     //border: solid;
@@ -38,6 +40,7 @@ header{
     width: 50%;
     font-size: x-large;
     padding: 9px 0px 0px 0px;
+    transition: padding 100ms ease;
 }
 nav{
     //border-style: dashed;
@@ -46,6 +49,7 @@ nav{
     width: 30%;
     display: flex;
     justify-content: center;
+    transition: margin 100ms ease;
 }
 ul{
     border: solid;
@@ -59,9 +63,9 @@ ul{
     height: 460px;
     //border: solid;
     //border-color: coral;
-    margin: 100px 0px 2px 0px;
-    display: flex;
-    justify-content: center;
+}
+section#section1{
+    margin-top: 100px;
 }
 section{
     height: 550px;
@@ -226,8 +230,29 @@ button{
     height: 680px;
 }
 
-/* Adding functionality */
-/*Sticky header */
-.sticky + .content{
+/* Functionlaity for sticky header*/
+section#contactSec{
     margin-top: 100px;
+}
+section#imgService{
+    margin-top: 100px;
+}
+section#aboutSectionImg{
+    margin-top: 100px;
+}
+header.sticky{
+    height: 80px;
+}
+#logoDiv.sticky{
+   // margin: 80px 15px 0px 155px;
+    height: 60px;
+    width: 60px;
+}
+#nameDiv.sticky{
+    padding: 0px;
+    font-size: large;
+}
+nav.sticky{
+    margin: 20px 0px 0px 0px;
+    font-size: smaller;
 }
