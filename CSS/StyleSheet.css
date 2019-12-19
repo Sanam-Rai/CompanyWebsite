@@ -39,17 +39,17 @@ header{
    // justify-content: center;
     width: 50%;
     font-size: x-large;
-    padding: 9px 0px 0px 0px;
-    transition: padding 100ms ease;
+    //padding: 9px 0px 0px 0px;
+    transition: font-size 100ms ease;
 }
 nav{
     //border-style: dashed;
     overflow: auto;
-    margin: 50px 0px 0px 0px;
+    margin: 35px 0px 0px 0px;
     width: 30%;
     display: flex;
     justify-content: center;
-    transition: margin 100ms ease;
+    transition: font-size 100ms ease;
 }
 ul{
     border: solid;
@@ -75,7 +75,7 @@ section{
     display: flex;
     justify-content: center;
 }
-#imageSlide{
+#imageSlideDiv{
     //border: solid;
     width: 80%;
     margin: 2px 0px 2px 0px;
@@ -117,7 +117,7 @@ footer{
     flex-direction: row-reverse;
     justify-content: center;
     padding: 1px;
-    background-color: lightsteelblue;
+    //background-color: lightsteelblue;
    // color: white;
 
     
