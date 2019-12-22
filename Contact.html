@@ -10,7 +10,7 @@
 
 <header>
         <div id="logoDiv"> <a href="Homepage.html" alt="homepage" >
-            <img src="Images/companyLogo.png" alt="logo image" style = "border-radius: 50%;"> </a>
+            <img size="Images/companyLogo.png" alt="logo image" style = "border-radius: 50%;"> </a>
          </div>
 
     <div id="nameDiv">
@@ -33,13 +33,46 @@
 <br>
 
 <section id="contactSec">
+    <form id="myForm" action="" method="POST">
+        <div>
+            <label for="firstName"> First Name </label>
+            <input type="text" id="firstName" name="firstName" size="10"/>
+        </div>
+        <br>
+        <div>
+            <label for="middleName"> Middle Name </label>
+            <input type="text" id="middleName" name="middleName" size="10"/>
+        </div>
+        <br>
+        <div>
+            <label for="lastName"> Last Name </label>
+            <input type="text" id="lastName" name="lastName" size="10"/>
+        </div>
+        <br>
+        <div>
+            <label for="e-mail"> E-mail </label>
+            <input type="text" id="e-mail" name="e-mail" size="20"/>
+        </div>
+        <br>
+        <div>
+            <label for="phone"> Phone </label>
+            <input type="number" id="phone" name="phone" size="12"/>
+        </div>
+        <br>
+        <div>
+            <label for="Message"> Message </label> <br>
+            <textarea id="Message" name="Message" placeholder="Please type your message here..."></textarea>
+        </div>
+        <br>
+        <button> Submit </button>
+    </form>
 
 </section>
 
 
 <footer>
     <div class="facebookLogo"> <a href="https://www.facebook.com/RS-cleaning-services-110872600352850/" target="_blank" >
-        <img class="facebookLogo" src="Images/facebookIcon.png" alt="facebook logo"> </a>
+        <img class="facebookLogo" size="Images/facebookIcon.png" alt="facebook logo"> </a>
     </div>
     <div class="footerDiv">
         developer Info
@@ -55,6 +88,6 @@
     </div>
     <p id="copy"> &copy; Sanam Rai</p>
 </footer>
-<script src="JS/script.js"></script>
+<script size="JS/script.js"></script>
 </body>
 </html>
