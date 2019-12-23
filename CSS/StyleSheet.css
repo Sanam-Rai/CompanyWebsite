@@ -15,6 +15,7 @@ body{
 
 }
 img{
+    //border: solid;
     height: 100%;
     width: 100%;
 }
@@ -24,7 +25,7 @@ header{
     display: flex;
     //justify-content: center;
     height: 100px;
-    background-color: lightsteelblue;
+    background-color: #001f3f;
     color: black;
     position: fixed;
     top : 0px;
@@ -44,7 +45,6 @@ header{
 }
 nav{
     //border-style: dashed;
-    overflow: auto;
     margin: 35px 0px 0px 0px;
     width: 30%;
     display: flex;
@@ -52,12 +52,14 @@ nav{
     transition: font-size 100ms ease;
 }
 ul{
-    border: solid;
+    //border: solid;
     float: left;
     //background-color: chocolate;
-    margin: 5px 10px 5px 10px;
+    margin: 15px 10px 0px 10px;
     padding: 8px;
-
+}
+ul:hover{
+    background-color: #0074D9;
 }
 #section1{
     height: 460px;
@@ -68,7 +70,7 @@ section#section1{
     margin-top: 100px;
 }
 section{
-    height: 550px;
+    height: 650px;
     //border: solid;
     border-color: coral;
     margin: 2px 0px 2px 0px;
@@ -90,13 +92,14 @@ section{
 }
 .bodyDiv{
     //border: solid;
-    width: 40%;
-    margin: 2% 0% 2% 0%;
+    width: 600px;
+    height: 550px;
+    margin: 3% 0% 0% 0%;
 }
 article{
-    //border: solid;
+   // border: solid;
     width: 40%;
-
+    height: 99%;
 }
 #reverseSec{
     display: flex;
@@ -107,8 +110,7 @@ article{
     font-size: xxx-large;
     font-weight: bold;
     padding:80px;
-    display: flex;
-    justify-content: center;
+    margin-top: 90px;
 }
 footer{
    // border-style: double;
@@ -116,35 +118,36 @@ footer{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    padding: 1px;
-    //background-color: lightsteelblue;
-   // color: white;
-
-    
-
+    //padding: 1px;
+    background-color: #001f3f;
+    color: #FFFF;
+    height: 45px; 
 }
 .footerDiv{
-    border: solid;
+    //border: solid;
     margin: 10px 20px 10px 20px;
     padding: 6px;
+}
+.footerDiv:hover, #facebookLogo:hover{
+    background-color: #0074D9;
 }
 #search{
     //border: solid;
     //width: 20%;
 }
-.facebookLogo{
+#facebookLogo{
     //border: solid;
-    height: 50px;
-    width: 50px;
+    height: 39px;
+    width: 40px;
     margin: 1px 100px 0px 100px;
 }
 #copy{
-    margin: 20px 300px 0px 0px;
+    margin: 15px 300px 0px 0px;
     //color: white;
 }
 a{
-    
     text-decoration: none;
+    color:#FFFF;
 }
 /*
 Start of Services webpage */
@@ -156,17 +159,21 @@ Start of Services webpage */
     flex-direction: column;
     margin: 0px 15px 15px 15px;
     padding: 30px;
+    height: 650px;
 }
 button{
     width: 20%;
 }
+#imgService button h3, #imgService h2{
+    color: #FF851B;
+}
 #sectionServices{
     //border: solid;
     border-color: blue;
-    height: 700px;
+    height: 760px;
 }
 .serviceDiv{
-    border: solid;
+    //border: solid;
     border-color: brown;
     width: 100%;
     margin: 2%;
@@ -182,26 +189,28 @@ button{
 
 /*This portion is for the "ABOUT" webpage */
 #aboutSection{
-    border: solid;
+    //border: solid;
     //display: flex;
     //flex-wrap: wrap;
-    margin: 1% 3% 1% 3%;
+   //margin: 1% 3% 1% 3%;
     padding: 1%;
-    background-color: rgb(181, 137, 0);
-    height: 350px;
+    //background-color: rgb(181, 137, 0);
+    background-color: #85144b;
+    height: 700px;
 }
 .aboutDiv{
-    border: solid;
-    border-color;: coral;
+    //border: solid;
+    //border-color;: coral;
     width: 25%;
     margin: 45px;
   // margin: 3%;
     background-color: white;
 }
 #aboutSectionImg{
-   // border: solid;
+    //border: solid;
     margin: 5px;
     padding: 3px;
+    height: 735px;
 }
 #firstAboutDiv1{
    // border: solid;
@@ -221,13 +230,6 @@ button{
     height: 50%;
     //width: 90%;
     color: white;
-}
-
-/* start of CONTACT webpage */
-#contactSec{
-    border: solid;
-    border-color: teal;
-    height: 680px;
 }
 
 /* Functionlaity for sticky header*/
@@ -255,4 +257,53 @@ header.sticky{
 nav.sticky{
     margin: 20px 0px 0px 0px;
     font-size: smaller;
+}
+
+/* start of CONTACT webpage */
+#contactSec{
+    //border: solid;
+    border-color: teal;
+    height: 100%; 
+}
+/*for Form section */
+textarea{
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+input, input[type=text], input[type=email], input[type=tel]{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 8px 0;
+}
+input[type=reset],[type=submit]{
+    width: 20%;
+    background-color: lightgreen;
+    float: right;
+    margin: 10px;
+    overflow: auto;
+}
+input[type=reset]:hover,[type=submit]:hover{
+    background-color: green;
+    cursor: grab;
+}
+form{
+    width: 40%;
+    background-color:#f2f2f2;
+    padding: 3%;
+    border-radius: 10px;
+    margin: 1%;
+}
+label{
+    font-size: larger;
+    font-weight: 100;
+}
+form > div{
+    clear: right;
 }
