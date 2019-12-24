@@ -52,7 +52,7 @@ function imageChange(){
     }
 }
 //set interval of the image change 
-var timeInterval= setInterval(imageChange, 3000);
+var timeInterval= setInterval(imageChange, 500);
 
  // pause the slide on user click
  slideshow.onclick = function(){
