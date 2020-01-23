@@ -58,3 +58,10 @@ var timeInterval= setInterval(imageChange, 500);
  slideshow.onclick = function(){
      clearInterval(timeInterval);
  }
+
+ function myFun() {
+    var x = document.createElement("input");
+    x.setAttribute("type", "radio");
+    document.body.appendChild(x);
+  }
+ 

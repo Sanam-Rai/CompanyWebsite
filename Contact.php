@@ -83,8 +83,8 @@
     <div id="facebookLogo"> <a href="https://www.facebook.com/RS-cleaning-services-110872600352850/" target="_blank" >
             <img src="Images/facebookIcon.png" alt="facebook logo"> </a>
     </div>
-    <div class="footerDiv">
-        Developer Info
+    <div class="footerDiv"> <a href="https://www.facebook.com/Rai209" target="_blank">
+        Developer Info </a>
     </div>
     <div class="footerDiv"> <a href="About.html" alt="link">
             About us </a>

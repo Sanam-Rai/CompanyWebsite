@@ -63,7 +63,7 @@ ul:hover{
 }
 #section1{
     height: 460px;
-    //border: solid;
+    border: solid;
     //border-color: coral;
 }
 section#section1{
@@ -157,9 +157,10 @@ Start of Services webpage */
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 2px 15px 2px;
     padding: 30px;
-    height: 650px;
+    height: 670px;
+    background-color: midnightblue;
 }
 button{
     width: 20%;
@@ -169,8 +170,9 @@ button{
 }
 #sectionServices{
     //border: solid;
-    border-color: blue;
+    //border-color: blue;
     height: 760px;
+    //background-color: #0074D9;
 }
 .serviceDiv{
     //border: solid;
@@ -197,6 +199,7 @@ button{
     //background-color: rgb(181, 137, 0);
     //background-color: #85144b;
     height: 700px;
+
 }
 .aboutDiv{
     //border: solid;
@@ -235,13 +238,13 @@ button{
 
 /* Functionlaity for sticky header*/
 section#contactSec{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 section#imgService{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 section#aboutSectionImg{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 header.sticky{
     height: 80px;
