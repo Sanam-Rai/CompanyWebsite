@@ -51,17 +51,38 @@ function imageChange(){
         count = 0;
     }
 }
-//set interval of the image change 
-var timeInterval= setInterval(imageChange, 500);
 
- // pause the slide on user click
- slideshow.onclick = function(){
-     clearInterval(timeInterval);
- }
+var timeInterval = setInterval(imageChange, 500);
 
+// make the slideshow start and stop on click
+// help from: https://stackoverflow.com/questions/35209662/stopping-and-starting-a-slideshow-with-onclick-event
+var clicked = false;
+slideshow.onclick = function() {
+    if(!clicked){
+        clearInterval( timeInterval);
+        clicked = true;
+    }
+    else{
+        timeInterval = setInterval(imageChange, 500);
+        clicked = false;
+    }
+}
+// ========================================================================================================================
+
+// This method is for radio botton activate for slideshows in the homepage 
  function myFun() {
     var x = document.createElement("input");
     x.setAttribute("type", "radio");
     document.body.appendChild(x);
   }
  
+//===========================================================================================================================
+//For left and right image slides 
+
+function left(){
+
+}
+
+function right(){
+    
+}

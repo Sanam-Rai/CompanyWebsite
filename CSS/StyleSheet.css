@@ -63,7 +63,7 @@ ul:hover{
 }
 #section1{
     height: 460px;
-    border: solid;
+    //border: solid;
     //border-color: coral;
 }
 section#section1{
@@ -269,6 +269,7 @@ nav.sticky{
     border-color: teal;
     height: 100%; 
 }
+
 /*for Form section */
 textarea{
     resize: none;
@@ -318,4 +319,13 @@ form > div{
 .error{
     color: red;
     font-size: small;
+}
+
+/* for the buttons on the side of the slideImages 
+*/
+#button1, #button2{
+    height: 15%;
+    width: 2%;
+    margin: 1%;
+    margin-top: 200px;
 }
