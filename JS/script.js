@@ -52,10 +52,11 @@ function imageChange(){
     }
 }
 
-var timeInterval = setInterval(imageChange, 500);
+var timeInterval = setInterval(imageChange, 1000);
 
 // make the slideshow start and stop on click
-// help from: https://stackoverflow.com/questions/35209662/stopping-and-starting-a-slideshow-with-onclick-event
+// help for slideshow.onclick function is retrived from: 
+//https://stackoverflow.com/questions/35209662/stopping-and-starting-a-slideshow-with-onclick-event
 var clicked = false;
 slideshow.onclick = function() {
     if(!clicked){
@@ -63,26 +64,66 @@ slideshow.onclick = function() {
         clicked = true;
     }
     else{
-        timeInterval = setInterval(imageChange, 500);
+        timeInterval = setInterval(imageChange, 1000);
         clicked = false;
     }
 }
 // ========================================================================================================================
-
-// This method is for radio botton activate for slideshows in the homepage 
- function myFun() {
-    var x = document.createElement("input");
-    x.setAttribute("type", "radio");
-    document.body.appendChild(x);
-  }
  
 //===========================================================================================================================
 //For left and right image slides 
-
+var flag = false;
+var counterForLeft = imageArray.length-1;
 function left(){
-
+    if( !flag ){
+        clearInterval(timeInterval);
+        flag = true;
+    }
+    if( counterForLeft <= 0){
+        counterForLeft = imageArray.length-1;
+    }
+    slideshow.setAttribute("src", imageArray[counterForLeft]);
+    counterForLeft--;
 }
 
+/*
+ROUGH CODE:
+function left(){
+    var flag = false;
+    var count2 = imageArray.length;
+    if( !flag ){
+        clearInterval(timeInterval);
+        flag = true;
+    }
+    else{
+        slideshow.setAttribute("src", imageArray[count2]);
+        count2--;
+
+        if( count2 <= 0){
+            count2 = imageArray.length;
+        }
+        flag = false;
+    }
+}
+
+var flag2 = false;
 function right(){
-    
+    if( !flag){
+        clearInterval(timeInterval);
+    }
+    imageChange();
+}
+*/
+
+var flag2 = false;
+var counterForRight = 0;
+function right(){
+    if( !flag){
+        clearInterval(timeInterval);
+    }
+    if( counterForRight >= imageArray.length){
+        counterForRight = 0;
+    }
+    slideshow.setAttribute("src", imageArray[counterForRight]);
+    counterForRight++;
 }
