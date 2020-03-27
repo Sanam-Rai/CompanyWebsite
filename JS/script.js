@@ -39,7 +39,7 @@ window.addEventListener("scroll", headerFun);
 
 var slideshow = document.getElementById("imageSlide");
 //create an array of images for slideshow 
-var imageArray= ["Images/slide1.jpg", "Images/slide2.jpg", "Images/slide3.jpg", "Images/slide4.jpg", "Images/slide5.jpg"];
+var imageArray= ["Images/slide1.jfif", "Images/slide2.jfif", "Images/slide3.jfif", "Images/slide4.jfif", "Images/slide5.jfif"];
 // initilize count
 var count = 0;
 //create a function for the image changes thorugh "src"
@@ -52,7 +52,7 @@ function imageChange(){
     }
 }
 
-var timeInterval = setInterval(imageChange, 1000);
+var timeInterval = setInterval(imageChange, 2000);
 
 // make the slideshow start and stop on click
 // help for slideshow.onclick function is retrived from: 
@@ -64,7 +64,7 @@ slideshow.onclick = function() {
         clicked = true;
     }
     else{
-        timeInterval = setInterval(imageChange, 1000);
+        timeInterval = setInterval(imageChange, 2000);
         clicked = false;
     }
 }

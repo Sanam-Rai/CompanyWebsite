@@ -59,12 +59,9 @@
         <textarea id="Message" name="message" placeholder="Please type your message here..." value="<?= $message ?>"></textarea><br><br>
         <span class="error"><?= $message_error ?></span> <br>
 
-        <label for="file"> Upload your resume </label>
-        <input type="file" name="file"/>
-
         <div id="success"> <?= $success_message ?></div>
         
-        <input type="reset"/>
+        <!-- input type="reset"/> -->
         <input type="submit"/>
         <br>
         <div>
