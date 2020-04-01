@@ -151,19 +151,18 @@ a{
 }
 /*
 Start of Services webpage */
+
 #imgService{
-    border: solid;
     background-size: cover;
-    background-repeat: no-repeat;
+    //background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin: 0px 2px 15px 2px;
+    //margin-top: 30px;
     padding: 30px;
-    height: 670px;
-    background-color: midnightblue;
+    height: 640px;
 }
 button{
-    width: 20%;
+    width: 15%;
 }
 #imgService button h3, #imgService h2{
     color: #FF851B;
@@ -171,22 +170,27 @@ button{
 #sectionServices{
     //border: solid;
     //border-color: blue;
-    height: 760px;
+    height: 740px;
     //background-color: #0074D9;
+    margin-top: 90px;
 }
 .serviceDiv{
     //border: solid;
     border-color: brown;
     width: 100%;
-    margin: 2%;
-    padding:20px;
+    padding:1%;
 }
 .innerDiv{
     //border: solid;
     height: 50%;
     width: 100%;
     justify-content: center;
-    padding:1px;
+    //padding:1px;
+    margin: 1px;
+}
+.innerDiv p{
+    height: 95%;
+    border: solid;
 }
 
 /*This portion is for the "ABOUT" webpage */
@@ -259,7 +263,7 @@ section#contactSec{
     margin-top: 90px;
 }
 section#imgService{
-    margin-top: 90px;
+    //margin-top: 90px;
 }
 section#aboutSectionImg{
     margin-top: 90px;
