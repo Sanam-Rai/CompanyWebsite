@@ -20,9 +20,9 @@
 
     <nav>
         <list> <b>
-                <ul> <a href="Contact.php" alt="contact webpage"> CONTACT </a></ul>
-                <ul> <a href="Services.html" alt="services webpage"> SERVICES </a></ul>
-                <ul> <a href="About.html" alt="about us webpage"> ABOUT </a> </ul></b>
+            <ul> <a href="Services.html" alt="services webpage"> SERVICES </a></ul>
+            <ul> <a href="Contact.php" alt="contact webpage"> CONTACT </a></ul>
+            <ul> <a href="About.html" alt="about us webpage"> ABOUT </a> </ul></b>
         </list>
     </nav>
 
