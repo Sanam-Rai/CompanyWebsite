@@ -80,15 +80,16 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
 
         $to= "lucy.test.no1@gmail.com";
         $subject= "Contact Form Submit";
+
         //use mail function
-        if(mail( $to, $subject, $message_body)){
+        if(mail($to, $subject, $message_body)){
             $success_message = "Message successfully sent, Thank you for contacting us!";
-            $firstName = $middleName = $lastName = $email = $phone = $message = $success_message= "";
+            $firstName = $middleName = $lastName = $email = $phone = $message = "";
         }
-        else{
-            $success_message = "Please Try Again!";
-            $firstName = $middleName = $lastName = $email = $phone = $message = $success_message= "";
-        }
+        // else{
+        //     $success_message = "Please Try Again!";
+        //     $firstName = $middleName = $lastName = $email = $phone = $message = "";
+        // }
     }
 }
 
