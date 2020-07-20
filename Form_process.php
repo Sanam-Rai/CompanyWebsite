@@ -1,4 +1,6 @@
 <?php
+
+
 //This code makes sure the form input validation; the form remembers the information when it is incorrectly entered
 // make sure the required fields stays; at last, sends the form data to the developer email address.
 
@@ -61,7 +63,7 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
     }
 
     if(empty($_POST["message"])){
-        $message = "";
+        $message = '';
     }
     else{
         $message = test_input($_POST["message"]);
@@ -78,18 +80,18 @@ if( $_SERVER["REQUEST_METHOD"] == "POST" ){
             $message_body .= "$key: $value\n";
         }
 
-        $to= "lucy.test.no1@gmail.com";
-        $subject= "Contact Form Submit";
+        $to= 'sanamrai02@outlook.com';
+        $subject= 'Contact Form Submit';
 
         //use mail function
-        if(mail($to, $subject, $message_body)){
+        if(mail($to, $subject, $message)){
             $success_message = "Message successfully sent, Thank you for contacting us!";
             $firstName = $middleName = $lastName = $email = $phone = $message = "";
         }
-        // else{
-        //     $success_message = "Please Try Again!";
-        //     $firstName = $middleName = $lastName = $email = $phone = $message = "";
-        // }
+        else{
+            $success_message = "Please Try Again!";
+            //$firstName = $middleName = $lastName = $email = $phone = $message = "";
+        }
     }
 }
 
@@ -99,3 +101,5 @@ function test_input($data){
     $data= htmlspecialchars($data);
     return $data;
 }
+
+?>
