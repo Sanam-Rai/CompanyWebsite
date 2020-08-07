@@ -62,7 +62,7 @@ ul:hover{
     background-color: slategrey;
 }
 #section1{
-    height: 460px;
+    height: 550px;
     //border: solid;
     //border-color: coral;
 }
@@ -83,12 +83,14 @@ section{
     margin: 2px 0px 2px 0px;
 }
 #map{
-    height: 300px;
+    height: 180px;
+    //border: solid;
+    margin-top: 5px;
 }
 .mapDiv{
-    //border: solid;
+   // border: solid;
     width: 40%;
-    height: 80%;
+    margin:2px;
 }
 .bodyDiv{
     //border: solid;
@@ -178,31 +180,30 @@ button{
     //border: solid;
     border-color: brown;
     width: 100%;
-    padding:1%;
+    padding:0% 2% 0% 1%;
 }
 .innerDiv{
     //border: solid;
-    height: 50%;
+    height: 48%;
     width: 100%;
     justify-content: center;
-    //padding:1px;
+    padding:5px;
     margin: 1px;
-    //background-color: steelblue;
+    background-color: steelblue;
 }
 .innerDiv h1{
     font-weight: bolder;
     margin: 2%;
-    //color: white;
+    color: white;
 }
 .innerDiv p{
     height:160px;
     //border: solid; 
-    //font-weight: bold;
+    //font-weight: 550;
     margin: 4%;
-    //color: white;
+    color: white;
     font-style: oblique;
     font-family: monospace;
-    font-size: larger;
     font-size: large;
     word-spacing: 4px;
     letter-spacing: 2px;
@@ -212,11 +213,14 @@ button{
     font-style: oblique;
     font-family: monospace;
     font-size: x-large;
+    color: white;
 }
 
-#serviceContact{
-    color: black;
+.serviceContact{
+    color: blue;
 }
+
+
 
 /*This portion is for the "ABOUT" webpage */
 #aboutSection{
@@ -367,9 +371,14 @@ form > div{
 
 /* for the buttons on the side of the slideImages 
 */
-#button1, #button2{
-    height: 15%;
-    width: 2%;
-    margin: 1%;
-    margin-top: 200px;
+.button1{
+    height: 99%;
+   // width: 3%;
+    //margin: 1%;
+    margin-top: 3px;
+    background-color: transparent;
+   // border-radius: 50%;
+   color: transparent;
+   border-color: transparent;
+   cursor: :default;
 }
